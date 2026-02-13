@@ -9,10 +9,10 @@ const queryClient = new QueryClient();
 
 function Root() {
   const ENDPOINT = import.meta.env.VITE_SURREALDB_ENDPOINT ?? "ws://localhost:8000/rpc";
-  const NS = import.meta.env.VITE_SURREALDB_NS ?? "test";
-  const DB = import.meta.env.VITE_SURREALDB_DB ?? "test";
-  const USER = import.meta.env.VITE_SURREALDB_USER ?? "root";
-  const PASS = import.meta.env.VITE_SURREALDB_PASS ?? "root";
+  const NS = import.meta.env.VITE_SURREALDB_NS ?? "";
+  const DB = import.meta.env.VITE_SURREALDB_DB ?? "";
+  const USER = import.meta.env.VITE_SURREALDB_USER ?? "";
+  const PASS = import.meta.env.VITE_SURREALDB_PASS ?? "";
 
   return (
     <StrictMode>
